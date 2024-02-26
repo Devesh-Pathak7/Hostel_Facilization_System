@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sanjivani_group_logo_white_bg"
+            android:contentDescription="TODO" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leaving Form"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25sp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Full Name"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:layout_weight="1"
+                        android:inputType="textPersonName"
+                        android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Room Number"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/room"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:maxLength="3"
+                        android:inputType="number"
+                        android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Phone Number"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/phone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Address"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/address"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="textMultiLine"
+                        android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:text="Select return date"/>
+
+            </TableRow>
+            <TableRow>
+                <DatePicker
+                    android:id="@+id/date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"/>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Reason for leave"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/reason"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="textMultiLine"
+                        android:layout_height="wrap_content"/></com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_weight="0.5"
+                    android:layout_marginTop="30dp"
+                    android:textSize="25sp"
+                    android:text="Approved Status:"
+                    android:layout_height="wrap_content"/>
+                <TextView android:layout_weight="0.5"
+                    android:id="@+id/status"
+                    android:textSize="25sp"
+                    android:textColor="#F00000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="NOT APPROVED"
+                    android:layout_marginTop="30dp"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent">
+                <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:text="Submit"
+                    android:onClick="submit"
+                    android:background="@drawable/buttonstyle"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"/>
+            </TableRow>
+
+        </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+</ScrollView>

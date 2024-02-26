@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "322014176941",
+    "firebase_url": "https://hostelfacilizationsystem-default-rtdb.firebaseio.com",
+    "project_id": "hostelfacilizationsystem",
+    "storage_bucket": "hostelfacilizationsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322014176941:android:f9e64292eb311a02e30824",
+        "android_client_info": {
+          "package_name": "com.example.hfs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322014176941-b6g5e9smibsfi04nfsglcuu2ljka3a0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhdMgJJURy1rZJz5qWrP0oydkeAQPVxg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322014176941-b6g5e9smibsfi04nfsglcuu2ljka3a0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

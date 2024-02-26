@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hfs">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sanjivani_group_logo_white_bg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sanjivani_group_logo_white_bg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hfs">
+        <activity
+            android:name=".viewattendance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".approvedform"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewnotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addnotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewcomplaints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewLeavingForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studentattendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".messstart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".emergencycontacts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studentcomplaint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Studentsportal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teachersportal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".leavingform"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studentsignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studentlogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/sanjivani_group_logo_white_bg" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:padding="8dp"
+        android:onClick="mess1"
+        android:layout_gravity="center"
+        android:text="Cafeteria"
+        android:textAllCaps="true"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:onClick="mess2"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:text="Sai-Laxmi Mess"
+        android:textAllCaps="true"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="mess3"
+        android:layout_marginLeft="12dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:text="Vaishnavi Fast-Food"
+        android:textAllCaps="true"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:onClick="mess4"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:text="Other Mess"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="true"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
